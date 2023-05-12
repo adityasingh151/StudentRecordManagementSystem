@@ -3,27 +3,24 @@ package OopsProject2;
 import java.util.LinkedList;
 import java.util.Scanner;
 
-/**
- *
- *
- */
+
 public class StudentRecordManagement {
 
     // creating an empty LinkedList
     LinkedList <Record> list;
 
-    /**
-     * Default Constructor.
-     */
+    
+   // Default Constructor.
+     
     public StudentRecordManagement() {
         list = new LinkedList <>();
     }
 
-    /**
-     * Add Record.
-     *
-     *  record
-     */
+    
+     // Add Record.
+     
+      // record
+     
     public void add(Record record) {
         //Check if a record already exists or not,
         //if not add it to Record list, Otherwise
@@ -36,12 +33,12 @@ public class StudentRecordManagement {
         }
     }
 
-    /**
-     * Search Record.
-     *
-     *  idNimber
-     * @return
-     */
+    
+     // Search Record.
+     
+     //idNimber
+     //@return
+     
     public boolean find(int idNumber) {
 
         // Iterate Record list
@@ -55,11 +52,11 @@ public class StudentRecordManagement {
         return false;
     }
 
-    /**
-     * Delete Record.
-     *
-     *  recIdNumber
-     */
+    
+     // Delete Record.
+     
+     //  recIdNumber
+     
     public void delete(int recIdNumber) {
         Record recordDel = null;
         // Iterate Record list.
@@ -79,12 +76,12 @@ public class StudentRecordManagement {
         }
     }
 
-    /**
-     * Find Record.
-     *
-     *  idNumber
-     * @return
-     */
+    
+     //Find Record.
+     
+     // idNumber
+     // @return
+     
     public Record findRecord(int idNumber) {
         // Iterate Record list
         for (Record l : list) {
@@ -96,12 +93,12 @@ public class StudentRecordManagement {
         return null;
     }
 
-    /**
-     * Update Record.
-     *
-     *  id
-     *  input
-     */
+    
+     //Update Record.
+     
+     //  id
+     // input
+     
     public void update(int id, Scanner input) {
 
         if (find(id)) {
@@ -124,9 +121,9 @@ public class StudentRecordManagement {
         }
     }
 
-    /**
-     * Display Records
-     */
+    
+     // Display Records
+     
     public void display() {
         // If Record list is empty then print the message below.
         if (list.isEmpty()) {
